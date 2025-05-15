@@ -296,29 +296,35 @@ body{
    margin-top: 20px;
  }
  @media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
   .nav-bar {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     padding: 1em 20px;
+    position: relative;
   }
-  .logo{
-    margin: 0;
-    margin-top: 10px;
+
+  .logo {
+    margin-left: 0;
   }
 
   .menu-icon {
     display: block;
     position: absolute;
-    top: 25px;
     right: 20px;
+    top: 20px;
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
     width: 100%;
-    display: none;
-    margin-top: 60px;
-    padding: 0;
+    margin-top: 10px;
   }
 
   #menu-toggle:checked + .menu-icon + .nav-links {
@@ -327,18 +333,31 @@ body{
 
   .nav-links li {
     margin: 15px 0;
-    text-align: left;
-    margin-left: 20px;
   }
 
+  .signup {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Header Section */
   .container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 10px;
   }
 
   .content h1 {
     font-size: 40px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
   }
 
   .illustration-image img {
@@ -346,73 +365,87 @@ body{
     margin-bottom: 30px;
   }
 
-  .demo-img {
-    margin-left: 0;
-    display: block;
-    margin-top: 20px;
-    width: 150px;
-  }
-
   .btn {
     position: static;
-    margin-top: 20px;
+    margin: 20px auto;
   }
 
-  .category h1,
-  .card-content h1,
-  .cntainer h1 {
-    font-size: 35px;
+  /* Services */
+  .category h1 {
+    font-size: 32px;
+  }
+
+  .category h5 {
+    font-size: 16px;
+  }
+
+  /* Cards */
+  .card-content h1 {
+    font-size: 36px;
+  }
+
+  .card-content h5 {
+    font-size: 16px;
+  }
+
+  /* Booking Section */
+  .cntainer {
+    padding: 10px;
+  }
+
+  .cnt-image2 {
+    margin-top: 20px;
     text-align: center;
   }
 
   .cnt-image1,
-  .cnt-image2 {
-    margin: 0 auto;
-    text-align: center;
+  .cnt-image2 img {
+    width: 100%;
+    height: auto;
   }
 
-  .cnt-image2 {
-    margin-top: 20px;
-  }
-
+  /* Footer */
   .footer-bottom {
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    gap: 40px;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   .footer-middle {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-right {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-left p {
-    text-align: center;
-  }
-
-  .icon-holder {
-    flex-direction: column;
     gap: 20px;
   }
 
+  /* Forw section */
   .forw {
     padding: 30px 15px;
   }
 
   .forw h3 {
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 24px;
+    margin-top: 40px;
   }
 
   .forw button {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 0;
     margin-top: 15px;
+  }
+
+  .demo-img {
+    margin: 10px auto;
+  }
+
+  .icon-holder {
+    justify-content: center;
   }
 }
